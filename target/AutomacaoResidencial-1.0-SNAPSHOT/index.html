@@ -2,54 +2,11 @@
 <head>
 	<title>Casa Inteligente</title>
         <meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-	<style>
-		.jumbotron {
-			width: 600px;
-                        height: 50px;
-			text-align: center;
-			margin-top: 5px;
-			margin-left: auto;
-			margin-right: auto;
-                        margin-bottom: 10px;
-		}
-                .jumbotron1 {
-			width: 200px;
-                        height: 60px;
-			text-align: center;
-			margin-top: 0px;
-			margin-left: auto;
-			margin-right: auto;
-                        margin-bottom: 5px;
-		}
-                .jumbotron3 {
-			width: auto;
-                        height: 60px;
-			text-align: center;
-			margin-top: 5px;
-			margin-left: auto;
-			margin-right: auto;
-                        margin-bottom: 5px;
-		}
-		.table {
-			margin-top: 10px;
-		}
-		.form-control {
-			margin-bottom: 5px;
-		}
-	</style>
-	<script src="js/angularjs/angular.js"></script>
-        <script src="js/angularjs/Controller.js"></script>
-	<script>
-		angular.module("acao", []);
-		angular.module("acao").controller("acaoCtrl", function ($scope) {
-			$scope.app = "Acionamentos";
-			
-			$scope.ligarLed = function (led) {
-				console.log($scope.led);
-			};
-		});
-	</script>
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="style/app.css">
+	<script src="libs/angularjs/angular.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controles/acaoCtrl.js"></script>
 </head>
 <body ng-controller="acaoCtrl">
     
@@ -58,33 +15,23 @@
         </div>
         <div>
             <div class="jumbotron">
-                    <h3>Iluminação</h3>
-                    {{}}
-                    {{led}}
+                <h3>Iluminação</h3>   
             </div>        
-                    <div class="jumbotron1">
-                        <button class="btn btn-primary btn-block" ng-click="ligarLed(led)">Ligar/Desligar</button>
-                        {{led}}
-                    </div>
-
-            
-
+                <div class="jumbotron1">
+                    <button class="btn btn-primary btn-block" ng-click="ligarLed(led)">Ligar/Desligar</button>
+                </div>
             <div class="jumbotron">
-                    <h3>Temperatura</h3>
+                <h3>Temperatura</h3>
             </div>
-                    <div class="jumbotron1">
-                        <button class="btn btn-primary btn-block" ng-click="ligarLed(led)">Ligar/Desligar</button>
-                        {{led1}}
-                    </div>
-
-            
+                <div class="jumbotron1">
+                    <button class="btn btn-primary btn-block" ng-click="ligarLed(led1)">Ligar/Desligar</button> 
+                </div>
             <div class="jumbotron">
                     <h3>Umidade</h3>
             </div>
-                    <div class="jumbotron1">
-                        <button class="btn btn-primary btn-block" ng-click="ligarLed(led2)">Ligar/Desligar</button>
-                        {{led2}}
-                    </div>
+                <div class="jumbotron1">
+                    <button class="btn btn-primary btn-block" ng-click="ligarLed(led2)">Ligar/Desligar</button>
+                </div>
         </div>
 	
 </body>
