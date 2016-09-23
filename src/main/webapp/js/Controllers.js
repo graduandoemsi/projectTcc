@@ -27,6 +27,9 @@
     App.controller('servicoController', function($scope) {
         $scope.message = 'servico';
     });
-     App.controller('salaController', function($scope) {
+    /* App.controller('salaController', function($scope) {
         //$scope.message = 'Sala';
     });
+    App.controller('cadastroUsuario', function($scope){
+        
+    };*/
