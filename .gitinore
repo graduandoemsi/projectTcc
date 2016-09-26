@@ -1,4 +1,4 @@
-/src/main/webapp/js/libs/
-/src/main/webapp/libs/
+src/main/webapp/js/libs/
+src/main/webapp/libs/
 .gitignore
 
