@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>br.edu.univas</groupId>
-    <artifactId>Automacao</artifactId>
+    <artifactId>Automacao_1</artifactId>
     <version>1.1</version>
     <packaging>war</packaging>
 
-    <name>Automacao</name>
+    <name>Automacao_1</name>
 
     <properties>
         <!--<endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>-->
