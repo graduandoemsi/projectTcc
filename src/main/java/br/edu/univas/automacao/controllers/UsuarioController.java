@@ -1,13 +1,12 @@
+package br.edu.univas.automacao.controllers;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.edu.univas.teste_12.controllers;
 
-import br.edu.univas.teste_12.data.Chamado;
-import br.edu.univas.teste_12.data.Status;
-import br.edu.univas.teste_12.data.Usuario;
+import br.edu.univas.automacao.data.Usuario;
 import java.util.ArrayList;
 import java.util.List;
 import javax.ws.rs.Consumes;
